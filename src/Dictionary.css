@@ -1,0 +1,12 @@
+.search-bar {
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  min-width: 300px;
+  width: 800px;
+  text-align: center;
+  align-content: center;
+}

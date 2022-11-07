@@ -1,6 +1,9 @@
-.App {
+.header {
   height: 40vmin;
   background-size: cover;
   background-position: center;
   background-image: url(./header.jpg);
+}
+.page {
+  text-align: center;
 }
