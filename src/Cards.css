@@ -9,6 +9,7 @@
   font-size: 24px;
   margin-bottom: 5px;
   margin-top: 5px;
+  margin-left: 50px;
 }
 .partOfSpeech::first-letter {
   text-transform: uppercase;
@@ -26,7 +27,6 @@
   margin-top: 10px;
 }
 .resultCard {
-  width: 500px;
   padding: 5px;
   border: 1px solid #ddd;
   background-size: cover;
@@ -37,6 +37,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   color: black;
+  text-align: left;
 }
 
 .resultCard:after {
@@ -61,4 +62,22 @@
   left: -65px;
   box-shadow: 0px -7px 6px -9px black;
   transform: rotate(135deg);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.synonyms {
+  text-align: right;
+}
+.audio {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+.phonetic {
+  border: none;
+  background: none;
+  font-size: 50px;
 }

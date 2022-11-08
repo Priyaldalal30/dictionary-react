@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Synonyms from "./Synonyms";
+import Phonetics from "./Phonetics";
 
 import "./Cards.css";
 
@@ -9,9 +10,16 @@ export default function Results(props) {
     return (
       <div className="results">
         <h3 className="word">{props.results.word}</h3>
-        <h6>
-          <Synonyms synonyms={props.results.meanings} />
-        </h6>
+        <div className="resultCard">
+          <div className="grid">
+            <div className="audio">
+              <Phonetics phonetics={props.results.phonetics} />
+            </div>
+            <div className="synonyms">
+              <Synonyms synonyms={props.results.meanings} />
+            </div>
+          </div>
+        </div>
         <p>
           {props.results.meanings.map(function (meaning, index) {
             return (

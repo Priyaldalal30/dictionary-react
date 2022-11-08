@@ -1,7 +1,6 @@
 .synonyms {
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
+  text-align: start;
 }
 .synonyms::first-letter {
   text-transform: uppercase;
