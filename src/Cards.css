@@ -1,0 +1,64 @@
+.word {
+  font-size: 30px;
+  margin: 5px;
+}
+.word::first-letter {
+  text-transform: uppercase;
+}
+.partOfSpeech {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.partOfSpeech::first-letter {
+  text-transform: uppercase;
+}
+.definition {
+  font-size: 18px;
+  padding-right: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.example {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.resultCard {
+  width: 500px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  background-size: cover;
+  background-clip: content-box;
+  background-color: #f6e26f;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.resultCard:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-bottom: 50px solid #fefefe;
+  bottom: -60px;
+  right: -65px;
+  box-shadow: 0px 7px 6px -9px black;
+  transform: rotate(135deg);
+}
+
+.resultCard:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-top: 50px solid #fefefe;
+  top: -60px;
+  left: -65px;
+  box-shadow: 0px -7px 6px -9px black;
+  transform: rotate(135deg);
+}
