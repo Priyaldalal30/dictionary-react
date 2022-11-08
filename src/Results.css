@@ -1,37 +1,19 @@
 .word {
-  font-size: 30px;
-  margin: 5px;
+  font-size: 50px;
+  margin: 0px;
+  font-family: "Edu VIC WA NT Beginner", cursive;
 }
 .word::first-letter {
   text-transform: uppercase;
 }
-.partOfSpeech {
-  font-size: 24px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.partOfSpeech::first-letter {
-  text-transform: uppercase;
-}
-.definition {
-  font-size: 18px;
-  padding-right: 5px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
-.example {
-  font-size: 15px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
+
 .resultCard {
+  max-width: 700px;
   padding: 5px;
   border: 1px solid #ddd;
   background-size: cover;
   background-clip: content-box;
-  background-color: #f6e26f;
+  background-color: #f6e26f6b;
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
@@ -63,21 +45,14 @@
   box-shadow: 0px -7px 6px -9px black;
   transform: rotate(135deg);
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.synonyms {
-  text-align: right;
-}
+
 .audio {
   margin: auto;
   text-align: center;
   align-items: center;
   font-size: 30px;
 }
-.phonetic {
-  border: none;
-  background: none;
-  font-size: 50px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

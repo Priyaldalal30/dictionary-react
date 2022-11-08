@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Cards.css";
+import "./Meaning.css";
 
 export default function Meaning(props) {
   return (

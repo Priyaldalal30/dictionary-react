@@ -1,7 +1,11 @@
 .synonyms {
-  list-style: none;
-  text-align: start;
+  text-transform: capitalize;
 }
-.synonyms::first-letter {
-  text-transform: uppercase;
+li {
+  list-style: none;
+  text-align: center;
+}
+ul {
+  padding: 0px;
+  margin-top: 5px;
 }

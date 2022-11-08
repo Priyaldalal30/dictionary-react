@@ -1,0 +1,20 @@
+.definition {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.example {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.partOfSpeech {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.partOfSpeech::first-letter {
+  text-transform: uppercase;
+}

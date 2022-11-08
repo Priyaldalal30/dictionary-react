@@ -3,32 +3,46 @@ import Meaning from "./Meaning";
 import Synonyms from "./Synonyms";
 import Phonetics from "./Phonetics";
 
-import "./Cards.css";
+import "./Results.css";
 
 export default function Results(props) {
   if (props.results) {
     return (
       <div className="results">
         <h3 className="word">{props.results.word}</h3>
-        <div className="resultCard">
-          <div className="grid">
-            <div className="audio">
-              <Phonetics phonetics={props.results.phonetics} />
+        <div className="synonyms">
+          <Synonyms synonyms={props.results.meanings} />
+        </div>
+
+        <div className="grid">
+          <div className="col1">
+            <div className="resultCard">
+              <span className="audio">
+                <p>
+                  {props.results.phonetics.map(function (phonetic, index) {
+                    return (
+                      <div key={index}>
+                        <Phonetics phonetics={phonetic} />
+                      </div>
+                    );
+                  })}
+                </p>
+              </span>
             </div>
-            <div className="synonyms">
-              <Synonyms synonyms={props.results.meanings} />
-            </div>
+            <p>
+              {props.results.meanings.map(function (meaning, index) {
+                return (
+                  <div className="resultCard" key={index}>
+                    <Meaning meaning={meaning} />
+                  </div>
+                );
+              })}
+            </p>
+          </div>
+          <div className="col2">
+            <div className="pictures">Pictures</div>
           </div>
         </div>
-        <p>
-          {props.results.meanings.map(function (meaning, index) {
-            return (
-              <div className="resultCard" key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          })}
-        </p>
       </div>
     );
   } else {
