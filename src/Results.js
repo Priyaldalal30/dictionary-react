@@ -19,13 +19,7 @@ export default function Results(props) {
             <div className="resultCard">
               <span className="audio">
                 <div>
-                  {props.results.phonetics.map(function (phonetic, index) {
-                    return (
-                      <div key={index}>
-                        <Phonetics phonetics={phonetic} />
-                      </div>
-                    );
-                  })}
+                  <Phonetics phonetics={props.results.phonetics} />
                 </div>
               </span>
             </div>

@@ -3,7 +3,18 @@
   background-size: cover;
   background-position: center;
   background-image: url(./header.jpg);
+  background-blend-mode: color-burn;
 }
 .page {
+  font-family: "Recursive", sans-serif;
+  padding: 15px;
   text-align: center;
+  background-image: linear-gradient(
+    to top,
+    #d5d4d05d 0%,
+    #d5d4d05a 1%,
+    #eeeeec54 31%,
+    #efeeec59 75%,
+    #e9e9e75a 100%
+  );
 }
