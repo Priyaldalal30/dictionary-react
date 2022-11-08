@@ -24,13 +24,17 @@ export default function Dictionary() {
 
   return (
     <div>
-      <form onSubmit={search}>
-        <input
-          type="search"
-          placeholder="Search"
-          className="search-bar "
-          onChange={handleWordChage}
-        />
+      <form className="s" onSubmit={search}>
+        <p class="s">
+          <input
+            type="search"
+            placeholder="Search"
+            id="search"
+            name="search"
+            className="search-bar "
+            onChange={handleWordChage}
+          />
+        </p>
       </form>
       <div className="results">
         <Results results={results} />
