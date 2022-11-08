@@ -9,7 +9,6 @@ export default function Dictionary() {
   let [results, setResult] = useState(null);
 
   function handleResponse(response) {
-    console.log(response);
     setResult(response.data[0]);
   }
   function search(event) {

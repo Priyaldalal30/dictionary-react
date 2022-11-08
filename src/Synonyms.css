@@ -1,0 +1,8 @@
+.synonyms {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.synonyms::first-letter {
+  text-transform: uppercase;
+}

@@ -3,7 +3,6 @@ import React from "react";
 import "./Cards.css";
 
 export default function Meaning(props) {
-  console.log(props.meaning);
   return (
     <div>
       <h4 className="partOfSpeech">{props.meaning.partOfSpeech}</h4>
