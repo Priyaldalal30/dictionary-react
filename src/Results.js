@@ -18,7 +18,7 @@ export default function Results(props) {
           <div className="col1">
             <div className="resultCard">
               <span className="audio">
-                <p>
+                <div>
                   {props.results.phonetics.map(function (phonetic, index) {
                     return (
                       <div key={index}>
@@ -26,10 +26,10 @@ export default function Results(props) {
                       </div>
                     );
                   })}
-                </p>
+                </div>
               </span>
             </div>
-            <p>
+            <div>
               {props.results.meanings.map(function (meaning, index) {
                 return (
                   <div className="resultCard" key={index}>
@@ -37,7 +37,7 @@ export default function Results(props) {
                   </div>
                 );
               })}
-            </p>
+            </div>
           </div>
           <div className="col2">
             <div className="pictures">Pictures</div>

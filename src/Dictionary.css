@@ -21,7 +21,8 @@
   width: 300px;
 }
 
-p.s {
+div.s {
+  margin-top: 20px;
   z-index: 4;
   position: relative;
   padding: 5px;
@@ -35,7 +36,7 @@ p.s {
     0 2px 5px rgba(150, 115, 0, 0.4);
 }
 
-p.s:after {
+div.s:after {
   content: "";
   display: block;
   position: absolute;

@@ -26,7 +26,7 @@ export default function Dictionary() {
   return (
     <div>
       <form className="s" onSubmit={search}>
-        <p class="s">
+        <div class="s">
           <input
             type="search"
             placeholder="Search"
@@ -35,7 +35,7 @@ export default function Dictionary() {
             className="search-bar "
             onChange={handleWordChage}
           />
-        </p>
+        </div>
       </form>
       <div className="results">
         <Results results={results} />
