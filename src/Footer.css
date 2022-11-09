@@ -7,12 +7,9 @@
       rgba(255, 255, 255, 0.6) 0%,
       rgba(171, 168, 168, 0.6) 100%
     ),
-    url(./header.jpg);
+    url(./header4.jpg);
   background-blend-mode: lighten;
-
-  border-top: 1px solid rgba(0, 0, 0, 0.359);
   padding: 10px;
-  font-family: "Recursive", sans-serif;
 }
 
 .logo {

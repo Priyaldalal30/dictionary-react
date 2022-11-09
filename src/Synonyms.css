@@ -1,7 +1,7 @@
 .synonyms {
   text-transform: capitalize;
-  font-weight: lighter;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 14px;
 }
 li {
   display: inline-block;
