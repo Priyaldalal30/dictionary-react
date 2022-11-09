@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import "./Phonetics.css";
 
@@ -10,19 +10,21 @@ export default function Phonetics(props) {
 
   if (props.phonetics) {
     return props.phonetics.map((el) => {
-      return (
-        <div>
-          <div className="audio">
-            <button className="phonetic" onClick={() => playSound(el.audio)}>
-              {" "}
-              <i class="fa-regular fa-circle-play">
+      if (el.audio?.length > 0 && el.text?.length > 0) {
+        return (
+          <div>
+            <div className="audio">
+              <button className="phonetic" onClick={() => playSound(el.audio)}>
                 {" "}
-                <span className="text"> {el.text}</span>
-              </i>
-            </button>
+                <i class="fa-regular fa-circle-play">
+                  {" "}
+                  <span className="text"> {el.text}</span>
+                </i>
+              </button>
+            </div>
           </div>
-        </div>
-      );
+        );
+      } else return <Fragment />;
     });
   }
 }
