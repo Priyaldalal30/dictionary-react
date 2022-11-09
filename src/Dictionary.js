@@ -2,20 +2,29 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import Synonyms from "./Synonyms";
 
 import "./Dictionary.css";
+import Phonetics from "./Phonetics";
 
 export default function Dictionary() {
   let [word, setWord] = useState("");
   let [results, setResult] = useState(null);
   let [photos, setPhotos] = useState([]);
+  let [phonetics, setPhonetics] = useState([]);
+  let [synonyms, setSynonyms] = useState([]);
+  let [title, setTitle] = useState("");
 
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
   }
 
   function handleResponse(response) {
+    console.log(response.data[0].meanings[0].synonyms);
     setResult(response.data[0]);
+    setPhonetics(response.data[0].phonetics);
+    setSynonyms(response.data[0].meanings[0].synonyms);
+    setTitle(response.data[0].word);
   }
   function search(event) {
     event.preventDefault();
@@ -51,8 +60,17 @@ export default function Dictionary() {
         </div>
       </form>
       <div className="results">
-        <Results results={results} />
-        <Photos photos={photos} />
+        <h3 className="word">{title}</h3>
+        <Phonetics phonetics={phonetics} />
+        <Synonyms synonyms={synonyms} />
+        <div className="row">
+          <div className="col-6">
+            <Results results={results} />
+          </div>
+          <div className="col-6">
+            <Photos photos={photos} />
+          </div>
+        </div>
       </div>
     </div>
   );
