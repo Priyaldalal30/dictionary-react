@@ -1,12 +1,15 @@
 .synonyms {
   text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 13px;
 }
 li {
+  display: inline-block;
+  padding-right: 6px;
   list-style: none;
-  text-align: left;
-  margin-left: 10px;
+  text-align: center;
 }
 ul {
-  padding: 0px;
   margin-top: 5px;
+  padding: 0px;
 }
