@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning";
 import Synonyms from "./Synonyms";
 import Phonetics from "./Phonetics";
+import Photos from "./Photos";
 
 import "./Results.css";
 
@@ -32,7 +33,7 @@ export default function Results(props) {
             </div>
           </div>
           <div className="col2">
-            <div className="pictures">Pictures</div>
+            <Photos photos={props.photos} />{" "}
           </div>
         </div>
       </div>

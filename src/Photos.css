@@ -1,0 +1,11 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.image:hover {
+  transform: scale(1.3);
+}
+.image {
+  padding: 5px;
+  border-radius: 10px;
+}
