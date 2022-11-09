@@ -6,3 +6,11 @@
   font-size: 20px;
   font-weight: 400;
 }
+@media (max-width: 700px) {
+  .phonetic,
+  .text {
+    padding-top: 3px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

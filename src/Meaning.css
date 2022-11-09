@@ -6,17 +6,15 @@
   font-weight: 400;
 }
 .example {
-  font-size: 14px;
-  margin-bottom: 15px;
-  margin-top: 3 bh6h6hyyhjpx;
-  font-weight: lighter;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  font-weight: bold;
 }
 .partOfSpeech {
   font-size: 20px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  margin-left: 50px;
-  font-weight: bolder;
+  margin: 10px;
+  font-weight: bold;
 }
 .partOfSpeech::first-letter {
   text-transform: uppercase;

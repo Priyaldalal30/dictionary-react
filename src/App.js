@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Responsive.css";
 import Dictionary from "./Dictionary";
 import Footer from "./Footer";
 

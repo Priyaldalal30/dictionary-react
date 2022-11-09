@@ -24,3 +24,13 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
+@media (max-width: 700px) {
+  .page {
+    padding: 7px;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+}

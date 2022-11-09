@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
 import "./Phonetics.css";
+import "./Responsive.css";
 
 export default function Phonetics(props) {
   function playSound(sound) {

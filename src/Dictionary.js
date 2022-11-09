@@ -5,6 +5,7 @@ import Photos from "./Photos";
 import Synonyms from "./Synonyms";
 
 import "./Dictionary.css";
+import "./Responsive.css";
 import Phonetics from "./Phonetics";
 
 export default function Dictionary() {
@@ -20,7 +21,6 @@ export default function Dictionary() {
   }
 
   function handleResponse(response) {
-    console.log(response.data[0].meanings[0].synonyms);
     setResult(response.data[0]);
     setPhonetics(response.data[0].phonetics);
     setSynonyms(response.data[0].meanings[0].synonyms);
@@ -63,11 +63,11 @@ export default function Dictionary() {
         <h3 className="word">{title}</h3>
         <Phonetics phonetics={phonetics} />
         <Synonyms synonyms={synonyms} />
-        <div className="row">
-          <div className="col-6">
+        <div className="main-grid">
+          <div className="writing">
             <Results results={results} />
           </div>
-          <div className="col-6">
+          <div className="picture">
             <Photos photos={photos} />
           </div>
         </div>
