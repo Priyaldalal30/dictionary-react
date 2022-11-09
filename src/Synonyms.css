@@ -3,7 +3,8 @@
 }
 li {
   list-style: none;
-  text-align: center;
+  text-align: left;
+  margin-left: 10px;
 }
 ul {
   padding: 0px;

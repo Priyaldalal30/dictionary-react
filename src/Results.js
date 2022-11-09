@@ -10,19 +10,22 @@ export default function Results(props) {
     return (
       <div className="results">
         <h3 className="word">{props.results.word}</h3>
-        <div className="synonyms">
-          <Synonyms synonyms={props.results.meanings} />
-        </div>
+
+        <span className="audio">
+          <div>
+            <Phonetics phonetics={props.results.phonetics} />
+          </div>
+        </span>
 
         <div className="grid">
           <div className="col1">
             <div className="resultCard">
-              <span className="audio">
-                <div>
-                  <Phonetics phonetics={props.results.phonetics} />
-                </div>
-              </span>
+              <div className="synonyms">
+                <h4 className="partOfSpeech">Synonyms</h4>
+                <Synonyms synonyms={props.results.meanings} />
+              </div>
             </div>
+
             <div>
               {props.results.meanings.map(function (meaning, index) {
                 return (

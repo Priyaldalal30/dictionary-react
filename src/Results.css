@@ -61,12 +61,6 @@
   transform: rotate(135deg);
 }
 
-.audio {
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  font-size: 30px;
-}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

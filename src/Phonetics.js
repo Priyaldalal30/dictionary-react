@@ -14,10 +14,13 @@ export default function Phonetics(props) {
         <div>
           <div className="audio">
             <button className="phonetic" onClick={() => playSound(el.audio)}>
-              <i class="fa-regular fa-circle-play"></i>
+              {" "}
+              <i class="fa-regular fa-circle-play">
+                {" "}
+                <span className="text"> {el.text}</span>
+              </i>
             </button>
           </div>
-          <div className="text">{el.text}</div>
         </div>
       );
     });
