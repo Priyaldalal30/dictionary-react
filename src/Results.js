@@ -25,7 +25,6 @@ export default function Results(props) {
                 <Synonyms synonyms={props.results.meanings} />
               </div>
             </div>
-
             <div>
               {props.results.meanings.map(function (meaning, index) {
                 return (
