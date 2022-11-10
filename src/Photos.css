@@ -7,4 +7,16 @@
 .image {
   border-radius: 5px;
   box-shadow: 0 7px 7px rgb(0 0 0 / 0.7);
+  object-fit: cover;
+  width: 100%;
+}
+.image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

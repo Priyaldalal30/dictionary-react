@@ -34,3 +34,8 @@
     letter-spacing: 5px;
   }
 }
+@media (max-width: 300px) {
+  .title {
+    font-size: 30px;
+  }
+}

@@ -10,7 +10,7 @@ export default function Photos(props) {
         <div className="photo-grid">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="imageGrid" key={index}>
+              <div className="image" key={index}>
                 <a href={photo.src.original} target="_blank" rel="noreferrer">
                   <img
                     src={photo.src.landscape}
