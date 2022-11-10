@@ -11,9 +11,9 @@ export default function Results(props) {
         <div>
           {props.results.meanings.map(function (meaning, index) {
             return (
-              <div className="resultCard" key={index}>
+              <p className="bubble thought" key={index}>
                 <Meaning meaning={meaning} />
-              </div>
+              </p>
             );
           })}
         </div>

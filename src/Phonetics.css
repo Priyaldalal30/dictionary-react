@@ -1,6 +1,7 @@
 .phonetic,
 .text {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
   border: none;
   background: none;
   font-size: 20px;

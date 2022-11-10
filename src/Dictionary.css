@@ -13,6 +13,7 @@
   z-index: 5;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  background-color: #c6cccd;
 }
 
 #search:focus {
