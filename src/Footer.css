@@ -74,7 +74,7 @@
 }
 @media (max-width: 700px) {
   .footer {
-    height: 40vmin;
+    height: 50vmin;
   }
 }
 @media (max-width: 300px) {
